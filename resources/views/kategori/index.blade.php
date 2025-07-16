@@ -48,7 +48,7 @@
 
     {{-- Tombol simpan --}}
     <div class="col-md-1 mb-3 d-flex align-items-end justify-content-end">
-     <button type="submit" class="btn btn-primary">Simpan</button>
+     <button type="submit" class="btn btn-primary">Tambah</button>
     </div>
    </div>
   </form>

@@ -80,16 +80,34 @@
      <th>Produk</th>
      <th>Jumlah</th>
      <th>Total</th>
+     <th>Kategori</th>
      <th>Aksi</th>
     </tr>
    </thead>
    <tbody>
-    @foreach($penjualan as $index => $row)
+    @foreach(collect($penjualan)->sortByDesc('total') as $index => $row)
     <tr>
      <td>{{ $row['tanggal'] }}</td>
      <td>{{ $row['produk'] }}</td>
      <td>{{ $row['jumlah'] }}</td>
      <td>Rp {{ number_format($row['total']) }}</td>
+     <td>
+      @php
+      $kategori = '';
+      if ($row['total'] >= 100000000) {
+      $kategori = 'Sangat Tinggi';
+      } elseif ($row['total'] >= 50000000) {
+      $kategori = 'Sedang';
+      } elseif ($row['total'] >= 20000000) {
+      $kategori = 'Cukup';
+      } elseif ($row['total'] >= 10000000) {
+      $kategori = 'Rendah';
+      } else {
+      $kategori = 'Sangat Rendah';
+      }
+      @endphp
+      {{ $kategori }}
+     </td>
      <td>
       {{-- Tombol Edit --}}
       <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#editModal{{ $index }}">Edit</button>

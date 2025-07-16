@@ -135,4 +135,5 @@
   @yield('js')
 
 </body>
+
 </html>
