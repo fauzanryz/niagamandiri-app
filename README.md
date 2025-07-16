@@ -17,12 +17,6 @@
 -   [📦 Teknologi Digunakan](#-teknologi-digunakan)
 -   [⚙️ Requirement Sistem](#️-requirement-sistem)
 -   [🚀 Instalasi](#-instalasi)
--   [🧠 Struktur Folder Penting](#-struktur-folder-penting)
--   [🧰 Fitur Aplikasi](#-fitur-aplikasi)
--   [🧪 Dokumentasi & Testing](#-dokumentasi--testing)
--   [🚀 Deployment](#-deployment)
--   [🤝 Kontribusi](#-kontribusi)
--   [📄 License](#-license)
 
 ---
 
